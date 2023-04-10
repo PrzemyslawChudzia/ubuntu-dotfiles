@@ -99,7 +99,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+alias gp="git push --no-verify"
+alias cdg="cd ~/Desktop/git"
 
 export PATH=$HOME/bin:$HOME/.local/bin:$HOME/WebStorm/bin/webstorm.sh:/usr/local/bin:/usr/local/cuda-12.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-12.0/lib64\
