@@ -51,6 +51,7 @@ bindsym $mod+Shift+q kill
 
 # dmenu/rofi
 bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+t exec --no-startup-id rofi -show run
 
 # print screen
 bindsym Print exec --no-startup-id flameshot gui
@@ -189,7 +190,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 workspace_layout default
-default_orientation vertical
+default_orientation horizontal
 default_border pixel 2
 default_floating_border normal 2
 for_window [all] title_window_icon yes
