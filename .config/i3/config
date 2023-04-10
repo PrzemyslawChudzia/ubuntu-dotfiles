@@ -45,11 +45,15 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec "$TERMINAL"
 
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # dmenu/rofi
 bindsym $mod+d exec --no-startup-id rofi -show drun
+
+# print screen
+bindsym Print exec --no-startup-id flameshot gui
 
 # change focus
 bindsym $mod+j focus left
