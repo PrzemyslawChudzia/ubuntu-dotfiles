@@ -120,6 +120,7 @@ set $ws10 "10"
 workspace $ws3 output $left_display
 workspace $ws4 output $left_display
 workspace $ws5 output $left_display
+workspace $ws6 output $left_display
 
 assign [class="(?i)webstorm"] $ws3
 
