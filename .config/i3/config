@@ -4,6 +4,9 @@ set $right_display DP-3
 
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
 
+bindsym Control+$mod+l exec "i3lock -c 000000"
+
+
 # Sets Display order
 exec --no-startup-id xrandr --output $right_display --auto --right-of $left_display
 
