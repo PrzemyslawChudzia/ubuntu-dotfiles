@@ -102,10 +102,13 @@ source $ZSH/oh-my-zsh.sh
 alias gp="git push --no-verify"
 alias cdg="cd ~/Desktop/git"
 
+alias vim="nvim"
+
+
 export PATH=$HOME/bin:$HOME/.local/bin:$HOME/WebStorm/bin/webstorm.sh:/usr/local/bin:/usr/local/cuda-12.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-12.0/lib64\
                          ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-                         
+
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
