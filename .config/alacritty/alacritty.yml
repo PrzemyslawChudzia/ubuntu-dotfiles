@@ -1,0 +1,10 @@
+cursor:
+  style:
+    shape: Block
+    blinking: Always
+  blink_interval: 450
+env:
+  TERM: xterm-256color
+font:
+  normal:
+    family: FiraCode Nerd Font

@@ -99,15 +99,22 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 alias gp="git push --no-verify"
 alias cdg="cd ~/Desktop/git"
 
+bindkey -s ^f "tmux-sessionizer\n"
+
 alias vim="nvim"
 
-
-export PATH=$HOME/bin:$HOME/.local/bin:$HOME/WebStorm/bin/webstorm.sh:/usr/local/bin:/usr/local/cuda-12.0/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-12.0/lib64\
-                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export PATH=$HOME/bin:$PATH
+export PATH=$HOME/bin/.local/scripts:$PATH
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/WebStorm/bin/webstorm.sh:$PATH
+export PATH=/usr/local/bin:$PATH
+# export PATH=$HOME/bin:$HOME/.local/bin:$HOME/WebStorm/bin/webstorm.sh:/usr/local/bin:/usr/local/cuda-12.0/bin${PATH:+:${PATH}}
+# export LD_LIBRARY_PATH=/usr/local/cuda-12.0/lib64\
+#                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
@@ -115,8 +122,5 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 # pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
+export PATH=$PNPM_HOME:$PATH
 # pnpm end
