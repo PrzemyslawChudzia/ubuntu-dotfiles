@@ -16,7 +16,7 @@ set $mod Mod4
 
 set $terminal alacritty
 set $browser "google-chrome --password-store=gnome"
-
+exec_always --no-startup-id feh --bg-fill --randomize ~/Pictures/Wallpapers/*
 # Font
 font pango:CaskaydiaCove Nerd Font Mono 12
 
