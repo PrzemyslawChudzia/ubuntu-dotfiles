@@ -20,6 +20,13 @@ lsp.configure('lua_ls', {
     }
 })
 
+lsp.configure('tsserver', {
+    init_options = {
+        preferences = {
+            importModuleSpecifierPreference = 'relative'
+        }
+    }
+})
 
 local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }

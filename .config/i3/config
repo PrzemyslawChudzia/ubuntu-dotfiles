@@ -5,7 +5,8 @@ set $headphones_output game
 set $speaker_output analog-stereo
 
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
-
+exec --no-startup-id setxkbmap -layout pl
+exec --no-startup-id setxkbmap -option 'grp:alt_shift_toggle'
 bindsym Control+$mod+l exec "i3lock -c 000000"
 
 
@@ -24,6 +25,7 @@ font pango:CaskaydiaCove Nerd Font Mono 12
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
+exec --no-startup-id compton --config ~/.config/compton.conf -b
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.

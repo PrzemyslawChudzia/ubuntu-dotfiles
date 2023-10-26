@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git aws ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -124,3 +124,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 export PNPM_HOME="$HOME/.local/share/pnpm"
 export PATH=$PNPM_HOME:$PATH
 # pnpm end
+export PATH="$HOME/.tfenv/bin:$PATH"
+#export USER_ID=1000
+#export GROUP_ID=1000
